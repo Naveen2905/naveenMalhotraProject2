@@ -1,0 +1,21 @@
+//Navigation
+nav {
+  background: $primaryColor;
+  width: 200px;
+  ul {
+    list-style-type: none;
+    li {
+      font-size: 25px;
+      a {
+        color: black;
+        &:hover {
+          color: coral;
+          &:after {
+            content: " hey its me!";
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

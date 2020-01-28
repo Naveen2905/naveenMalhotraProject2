@@ -235,30 +235,39 @@ html {
   overflow: hidden;
 }
 
-html {
-  font-size: 62.5%;
+nav {
+  background: skyblue;
+  width: 200px;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
-/* stripping default values */
-h1, h2, h4, p, li, ul {
-  margin: 0;
-  padding: 0;
-}
-
-li, a {
+nav ul {
   list-style-type: none;
-  text-decoration: none;
 }
 
-/* Wrapper */
-.wrapper {
-  max-width: 1140px;
-  width: 85%;
-  margin: 0 auto;
+nav ul li {
+  font-size: 25px;
 }
-/*# sourceMappingURL=style.css.map */
+
+nav ul li a {
+  color: black;
+}
+
+nav ul li a:hover {
+  color: coral;
+}
+
+nav ul li a:hover:after {
+  content: " hey its me!";
+  font-size: 16px;
+}
+
+body {
+  background: gold;
+}
+
+@media (max-width: 1023px) {
+  body {
+    background: khaki;
+    color: grey;
+  }
+}

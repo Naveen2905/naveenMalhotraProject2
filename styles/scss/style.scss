@@ -1,0 +1,17 @@
+@import "./setup";
+@import "./variables";
+@import "./navigation";
+
+@mixin mq-tablet {
+  @media  (max-width: 1023px) {
+      @content;
+  }
+}
+
+body {
+    background: gold;
+    @include mq-tablet {
+        background: khaki;
+        color: grey;
+    }
+}
