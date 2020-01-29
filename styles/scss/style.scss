@@ -8,8 +8,9 @@ html {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
+  height: auto;
 }
 
 // stripping default values
@@ -42,14 +43,15 @@ a {
 
 header {
   background: #f6a823;
-  height: 80vh;
+  height: 100vh;
 }
 
 .navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 10vh;
+  padding-top: 10px;
+  align-items: center;
   ul {
     width: 60%;
     display: flex;
@@ -82,26 +84,35 @@ header {
 }
 
 .headingPhoto {
-  display: flex;
-  flex-direction: row;
-  height: 70vh;
+  margin-top: 10%;
   ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    li:nth-of-type(1) {
+      width: calc(100% / 2);
       display: flex;
       flex-direction: column;
-      justify-content: center;
-    width: calc(100% / 2);
-    li:nth-of-type(1) {
-      width: 30%;
+      div{
+        padding-right: 80%;
+        position: relative;
+        top: 30px;
+        right: 30px;
+      }
+      h1 {
+        font-family: $font1;
+        text-transform: uppercase;
+        font-size: calc(8rem + 0.5vw);
+        line-height: 9.2rem;
+      }
     }
     li:nth-of-type(2) {
-      width: 70%;
-    }
-  }
-  div {
-      display: flex;
-      width: calc(100%/2);
-    img {
-        width: 250px;
+      width: 30%;
+      img {
+        box-shadow: 10px 10px whitesmoke;
+      }
     }
   }
 }

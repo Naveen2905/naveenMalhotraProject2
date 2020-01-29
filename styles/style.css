@@ -240,8 +240,9 @@ html {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
+  height: auto;
 }
 
 h1,
@@ -268,7 +269,7 @@ a {
 
 header {
   background: #f6a823;
-  height: 80vh;
+  height: 100vh;
 }
 
 .navigation {
@@ -282,7 +283,10 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 10vh;
+  padding-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation ul {
@@ -331,6 +335,11 @@ header {
 }
 
 .headingPhoto {
+  margin-top: 10%;
+}
+
+.headingPhoto ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,10 +347,15 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 70vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.headingPhoto ul {
+.headingPhoto ul li:nth-of-type(1) {
+  width: calc(100% / 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,27 +363,27 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: calc(100% / 2);
 }
 
-.headingPhoto ul li:nth-of-type(1) {
-  width: 30%;
+.headingPhoto ul li:nth-of-type(1) div {
+  padding-right: 80%;
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+
+.headingPhoto ul li:nth-of-type(1) h1 {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-size: calc(8rem + 0.5vw);
+  line-height: 9.2rem;
 }
 
 .headingPhoto ul li:nth-of-type(2) {
-  width: 70%;
+  width: 30%;
 }
 
-.headingPhoto div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: calc(100%/2);
-}
-
-.headingPhoto div img {
-  width: 250px;
+.headingPhoto ul li:nth-of-type(2) img {
+  -webkit-box-shadow: 10px 10px whitesmoke;
+          box-shadow: 10px 10px whitesmoke;
 }
