@@ -235,39 +235,141 @@ html {
   overflow: hidden;
 }
 
-nav {
-  background: skyblue;
-  width: 200px;
+html {
+  font-size: 62.5%;
 }
 
-nav ul {
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h4,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
   list-style-type: none;
+  text-decoration: none;
 }
 
-nav ul li {
-  font-size: 25px;
+.wrapper {
+  max-width: 1140px;
+  width: 85%;
+  margin: 0 auto;
 }
 
-nav ul li a {
-  color: black;
+header {
+  background: #f6a823;
+  height: 80vh;
 }
 
-nav ul li a:hover {
-  color: coral;
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
 }
 
-nav ul li a:hover:after {
-  content: " hey its me!";
-  font-size: 16px;
+.navigation ul {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body {
-  background: gold;
+.navigation ul li {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0 3%;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
-@media (max-width: 1023px) {
-  body {
-    background: khaki;
-    color: grey;
-  }
+.navigation ul li h2 {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.navigation ul li h2 a {
+  color: #2c2c2c;
+  padding: 5px;
+}
+
+.navigation ul li a {
+  color: #2c2c2c;
+  padding: 5px;
+}
+
+.headingPhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 70vh;
+}
+
+.headingPhoto ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% / 2);
+}
+
+.headingPhoto ul li:nth-of-type(1) {
+  width: 30%;
+}
+
+.headingPhoto ul li:nth-of-type(2) {
+  width: 70%;
+}
+
+.headingPhoto div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100%/2);
+}
+
+.headingPhoto div img {
+  width: 250px;
 }

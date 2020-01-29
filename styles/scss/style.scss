@@ -1,17 +1,107 @@
 @import "./setup";
 @import "./variables";
-@import "./navigation";
+@import "./mixins";
+// Setting default font value
 
-@mixin mq-tablet {
-  @media  (max-width: 1023px) {
-      @content;
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+// stripping default values
+
+h1,
+h2,
+h4,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+// Wrapper
+
+.wrapper {
+  max-width: 1140px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+// Header
+
+header {
+  background: #f6a823;
+  height: 80vh;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+  ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      font-family: $font2;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin: 0 3%;
+      line-height: 2.9rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+      h2 {
+        font-family: $font1;
+        text-transform: uppercase;
+        font-size: 4.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        a {
+          @include anchor();
+        }
+      }
+      a {
+        @include anchor();
+      }
+    }
   }
 }
 
-body {
-    background: gold;
-    @include mq-tablet {
-        background: khaki;
-        color: grey;
+.headingPhoto {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    width: calc(100% / 2);
+    li:nth-of-type(1) {
+      width: 30%;
     }
+    li:nth-of-type(2) {
+      width: 70%;
+    }
+  }
+  div {
+      display: flex;
+      width: calc(100%/2);
+    img {
+        width: 250px;
+    }
+  }
 }
