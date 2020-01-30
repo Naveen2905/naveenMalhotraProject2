@@ -510,7 +510,7 @@ button {
 
 .rowTwo .umbrellaImage img {
   position: absolute;
-  top: -40px;
+  top: -10px;
   left: 40px;
   -webkit-box-shadow: 60px 15px #f6a823;
           box-shadow: 60px 15px #f6a823;
@@ -695,4 +695,11 @@ button {
   font-size: 1.8rem;
   line-height: 3.2rem;
   margin: 5% 0;
+}
+
+.theatreImage {
+  background: url(../sophie-assets/sophie-assets/home-image-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
 }

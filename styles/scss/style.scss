@@ -208,7 +208,7 @@ button {
     position: relative;
     img {
       position: absolute;
-      top: -40px;
+      top: -10px;
       left: 40px;
       box-shadow: 60px 15px #f6a823;
     }
@@ -330,3 +330,21 @@ button {
   }
 }
 // Links Styling Ends
+
+// Theatre background Image section Starts
+
+.theatreImage{
+  background: url(../sophie-assets/sophie-assets/home-image-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+// Theatre background Image section Ends
+
+
+
+
+
+
+// Theatre background Image section Ends
