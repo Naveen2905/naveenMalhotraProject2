@@ -412,14 +412,16 @@ button {
   border: none;
   background: #05afc1;
   color: #2c2c2c;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
   font-family: "Roboto", sans-serif;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
   font-weight: bold;
   cursor: pointer;
-  padding: 2rem 3rem;
+  padding: 1rem 1rem;
 }
 
 .rowOne {
@@ -508,8 +510,189 @@ button {
 
 .rowTwo .umbrellaImage img {
   position: absolute;
-  top: 30px;
+  top: -40px;
   left: 40px;
-  -webkit-box-shadow: 60px 15px #F6A823;
-          box-shadow: 60px 15px #F6A823;
+  -webkit-box-shadow: 60px 15px #f6a823;
+          box-shadow: 60px 15px #f6a823;
+}
+
+.links {
+  background: #f0efed;
+}
+
+.links .linksList {
+  padding-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.links .linksList li {
+  width: calc(100% / 2);
+}
+
+.links .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.links .photos div:nth-of-type(1) {
+  margin-right: 10px;
+  font-size: 2.4rem;
+}
+
+.links .photos .photosInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.links .photos .photosInfo h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 1;
+}
+
+.links .photos .photosInfo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin: 5% 0;
+}
+
+.links .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.links .about div:nth-of-type(1) {
+  margin-right: 10px;
+  font-size: 2.4rem;
+}
+
+.links .about .aboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.links .about .aboutInfo h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 1;
+}
+
+.links .about .aboutInfo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin: 5% 0;
+}
+
+.links .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.links .blog div:nth-of-type(1) {
+  margin-right: 10px;
+  font-size: 2.4rem;
+}
+
+.links .blog .blogInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.links .blog .blogInfo h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 1;
+}
+
+.links .blog .blogInfo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin: 5% 0;
+}
+
+.links .getInTouch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.links .getInTouch div:nth-of-type(1) {
+  margin-right: 10px;
+  font-size: 2.4rem;
+}
+
+.links .getInTouch .getInTouchInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.links .getInTouch .getInTouchInfo h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 1;
+}
+
+.links .getInTouch .getInTouchInfo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin: 5% 0;
 }
