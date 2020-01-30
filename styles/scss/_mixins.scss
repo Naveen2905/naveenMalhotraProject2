@@ -4,3 +4,17 @@
   color: #2c2c2c;
   padding: 5px;
 }
+
+@mixin moreButton() {
+  border: none;
+  background: #05afc1;
+  color: #2c2c2c;
+  font-size: 1.6rem;
+  font-family: $font2;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2rem 3rem;
+}

@@ -8,7 +8,7 @@ html {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
 }
@@ -31,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-// Wrapper
+// Wrapper---------------
 
 .wrapper {
   max-width: 1140px;
@@ -39,7 +39,7 @@ a {
   margin: 0 auto;
 }
 
-// Header
+// Header Starts--------------
 
 header {
   background: #f6a823;
@@ -84,7 +84,7 @@ header {
 }
 
 .headingPhoto {
-  margin-top: 10%;
+  margin-top: 12%;
   ul {
     width: 100%;
     display: flex;
@@ -95,7 +95,7 @@ header {
       width: calc(100% / 2);
       display: flex;
       flex-direction: column;
-      div{
+      div {
         padding-right: 80%;
         position: relative;
         top: 30px;
@@ -113,6 +113,104 @@ header {
       img {
         box-shadow: 10px 10px whitesmoke;
       }
+    }
+  }
+}
+
+//Header ends--------------
+
+//Main Starts --------------------
+
+// Section "Who is Sophie" Starts
+
+.whoSophie {
+  background: #f0efed;
+  padding: 5% 0 10% 0;
+  h2 {
+    font-family: $font2;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 15px auto;
+  }
+}
+.info {
+  font-family: $font2;
+  font-size: 2rem;
+  margin: 15px 0;
+}
+button {
+  @include moreButton();
+}
+// Section "Who is Sophie" Ends
+
+// Sophie's Blog section starts
+
+.rowOne {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+  .dogImage {
+    width: calc(100% / 2);
+    position: relative;
+    img {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      box-shadow: -60px 15px #a82706;
+    }
+  }
+  .favouriteThings {
+    width: calc(100% / 2);
+    padding: 2% 0 0 2%;
+    h3 {
+      font-family: $font2;
+      font-size: 3.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .info{
+      text-align: left;
+    }
+    .readButton1{
+      text-align: left;
+    }
+  }
+}
+
+.rowTwo {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  .travelled {
+    width: calc(100% / 2);
+    padding: 2% 0 0 2%;
+    h3 {
+      font-family: $font2;
+      font-size: 3.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0;
+      text-align: right;
+    }
+    .info {
+      text-align: right;
+    }
+    .readButton2 {
+      text-align: right;
+    }
+  }
+  .umbrellaImage {
+    width: calc(100% / 2);
+    position: relative;
+    img {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      box-shadow: 60px 15px #F6A823;
     }
   }
 }
