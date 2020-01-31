@@ -362,8 +362,94 @@ header {
 }
 
 main {
-  background: #F0EFED;
-  height: 100vh;
+  background: #f0efed;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10% 0;
+}
+
+.blogAside {
+  width: 30%;
+}
+
+.aboutSophie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  background: #f5f5f5;
+  margin-bottom: 10%;
+}
+
+.aboutSophie h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 5% 0;
+}
+
+.aboutSophie p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+.aboutSophie p a {
+  color: #285e64;
+  font-weight: bold;
+}
+
+.recentPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  background: #f5f5f5;
+}
+
+.recentPost h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 5% 0;
+}
+
+.recentPost ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+.recentPost ul li::before {
+  content: "\2022";
+  color: #F6A823;
+  display: inline-block;
+  margin-left: 1rem;
+  width: 1rem;
+}
+
+.mainSection {
+  width: 70%;
 }
 
 footer {

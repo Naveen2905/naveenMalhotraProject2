@@ -83,36 +83,95 @@ header {
   }
 }
 
-.blogPosition{
-    position: relative;
+.blogPosition {
+  position: relative;
 }
 
-.headerBackground{
-    background-image: url(../sophie-assets/sophie-assets/blog-image-1.jpg);
-    background-size: cover;
-    height: 60vh;
-    background-position: right;
-    display: flex;
-    align-items: end;
-    p{
-        font-family: $font1;
-        font-size: 7.5rem;
-        line-height: 9.2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        position: absolute;
-        top: -50px;
+.headerBackground {
+  background-image: url(../sophie-assets/sophie-assets/blog-image-1.jpg);
+  background-size: cover;
+  height: 60vh;
+  background-position: right;
+  display: flex;
+  align-items: end;
+  p {
+    font-family: $font1;
+    font-size: 7.5rem;
+    line-height: 9.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: -50px;
+  }
+}
+
+// Main Styling Starts
+main {
+  background: #f0efed;
+}
+.blogContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10% 0;
+}
+.blogAside {
+  width: 30%;
+}
+.aboutSophie {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background: #f5f5f5;
+  margin-bottom: 10%;
+  h4 {
+    font-family: $font2;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 5% 0;
+  }
+  p {
+    font-family: $font2;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    a {
+      color: #285e64;
+      font-weight: bold;
     }
+  }
 }
 
-// Main Styling Starts 
-main{
-    background: #F0EFED;
-    height: 100vh; // Temporary 
+.recentPost {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background: #f5f5f5;
+  h4 {
+    font-family: $font2;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 5% 0;
+  }
+  ul li{
+    font-family: $font2;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+  ul li::before{
+    content: "\2022";
+    color: #F6A823;
+    display: inline-block;
+    margin-left: 1rem;
+    width: 1rem;
+  }
 }
 
-
-
+.mainSection {
+  width: 70%;
+}
 // Footer Starts
 footer {
   background: #2c2c2c;
