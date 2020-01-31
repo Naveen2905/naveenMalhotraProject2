@@ -383,3 +383,37 @@ button {
 
 //Sophie's Journey section Ends
 
+// Three Images gallery section Starts 
+.imagesContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10% 0;
+  div{
+    width: calc((100%/3) - 20px);
+  }
+}
+
+.imageSix{
+  margin-right: 20px;
+}
+
+.imageSeven{
+  margin-right: 20px;
+}
+// Three Images gallery section Ends
+
+// Footer Starts 
+footer{
+  background: #2C2C2C;
+  padding: 8px 0;
+  p{
+    text-align: center;
+    font-size: 1.6rem ;
+    font-family: $font2;
+    color: #F0EFED;
+    text-transform: capitalize;
+  }
+}
+// Footer Ends 
+

@@ -1,0 +1,128 @@
+@import "./setup";
+@import "./variables";
+@import "./mixins";
+// Setting default font value
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+// stripping default values
+
+h1,
+h2,
+h4,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+// Wrapper---------------
+
+.wrapper {
+  max-width: 1140px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+// Header Starts--------------
+
+header {
+  background: #f6a823;
+  height: 70vh;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      font-family: $font2;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin: 0 3%;
+      line-height: 2.9rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+      h2 {
+        font-family: $font1;
+        text-transform: uppercase;
+        font-size: 4.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        a {
+          @include anchor();
+        }
+      }
+      a {
+        @include anchor();
+      }
+    }
+  }
+}
+
+.blogPosition{
+    position: relative;
+}
+
+.headerBackground{
+    background-image: url(../sophie-assets/sophie-assets/blog-image-1.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-position: right;
+    display: flex;
+    align-items: end;
+    p{
+        font-family: $font1;
+        font-size: 7.5rem;
+        line-height: 9.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        top: -50px;
+    }
+}
+
+// Main Styling Starts 
+main{
+    background: #F0EFED;
+    height: 100vh; // Temporary 
+}
+
+
+
+// Footer Starts
+footer {
+  background: #2c2c2c;
+  padding: 8px 0;
+  p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: $font2;
+    color: #f0efed;
+    text-transform: capitalize;
+  }
+}
+// Footer Ends
