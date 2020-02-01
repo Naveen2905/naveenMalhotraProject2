@@ -533,29 +533,104 @@ main {
   width: 80%;
 }
 
+.commentForm {
+  width: 100%;
+}
+
 .commentForm input[type="text"] {
-  width: calc((100%/2) - 5px);
+  margin: 10px 10px 10px 0;
+  width: calc((100% / 2) - 20px);
   padding: 10px;
-  margin: 5px;
   display: inline-block;
   border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.commentForm input[type="text"]::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm input[type="text"]:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm input[type="text"]::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm input[type="text"]::placeholder {
+  font-style: italic;
 }
 
 .commentForm input[type="email"] {
-  width: calc((100%/2) - 5px);
+  margin: 10px 0 10px 10px;
+  width: calc((100% / 2) - 10px);
   padding: 10px;
-  margin: 5px;
   display: inline-block;
   border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.commentForm input[type="email"]::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm input[type="email"]:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm input[type="email"]::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm input[type="email"]::placeholder {
+  font-style: italic;
 }
 
 .commentForm textarea {
   width: 100%;
   padding: 10px;
-  margin: 5px;
   display: block;
   border: none;
   resize: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.commentForm textarea::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm textarea:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm textarea::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.commentForm textarea::placeholder {
+  font-style: italic;
+}
+
+.commentForm button {
+  border: none;
+  background: #05afc1;
+  color: #2c2c2c;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  width: 100%;
+  margin: 10px 0;
 }
 
 footer {

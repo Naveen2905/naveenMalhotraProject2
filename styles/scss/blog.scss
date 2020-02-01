@@ -235,27 +235,47 @@ main {
   }
 }
 .commentForm {
+  width: 100%;
   input[type="text"] {
-    width: calc((100%/2) - 5px);
+    margin: 10px 10px 10px 0;
+    width: calc((100% / 2) - 20px);
     padding: 10px;
-    margin: 5px;
     display: inline-block;
     border: none;
+    font-family: $font2;
+    font-size: 1.6rem;
+    &::placeholder {
+      font-style: italic;
+    }
   }
   input[type="email"] {
-    width: calc((100%/2) - 5px);
+    margin: 10px 0 10px 10px;
+    width: calc((100% / 2) - 10px);
     padding: 10px;
-    margin: 5px;
     display: inline-block;
     border: none;
+    font-family: $font2;
+    font-size: 1.6rem;
+    &::placeholder {
+      font-style: italic;
+    }
   }
-  textarea{
+  textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px;
     display: block;
     border: none;
     resize: none;
+    font-family: $font2;
+    font-size: 1.6rem;
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+  button {
+    @include moreButton();
+    width: 100%;
+    margin: 10px 0
   }
 }
 // Footer Starts
