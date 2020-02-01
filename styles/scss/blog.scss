@@ -17,6 +17,7 @@ img {
 
 h1,
 h2,
+h3,
 h4,
 p,
 li,
@@ -155,14 +156,14 @@ main {
     text-transform: uppercase;
     margin: 5% 0;
   }
-  ul li{
+  ul li {
     font-family: $font2;
     font-size: 1.6rem;
     line-height: 3.2rem;
   }
-  ul li::before{
+  ul li::before {
     content: "\2022";
-    color: #F6A823;
+    color: #f6a823;
     display: inline-block;
     margin-left: 1rem;
     width: 1rem;
@@ -171,6 +172,91 @@ main {
 
 .mainSection {
   width: 70%;
+  margin-left: 5%;
+  .box1,
+  .box3 {
+    border-bottom: 4px solid #f6a823;
+  }
+  div {
+    padding: 10px;
+    background: #f5f5f5;
+    margin-bottom: 5%;
+    h3 {
+      font-family: $font2;
+      font-size: 2.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $font2;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      margin-bottom: 10px;
+      a {
+        font-weight: bold;
+        color: #285e64;
+      }
+    }
+  }
+  .jeremy {
+    display: flex;
+    flex-direction: row;
+    li {
+      .jeremyBox2 {
+        color: #285e64;
+        font-weight: bold;
+      }
+      &:nth-of-type(1) {
+        width: 100%;
+        margin: 0 10px;
+      }
+      &::nth-of-type(2) {
+        width: 80%;
+      }
+    }
+  }
+  .juliaBox {
+    display: flex;
+    flex-direction: row;
+    li {
+      .juliaBox3 {
+        color: #285e64;
+        font-weight: bold;
+      }
+      &:nth-of-type(1) {
+        width: 100%;
+        margin: 0 10px;
+      }
+      &::nth-of-type(2) {
+        width: 80%;
+      }
+    }
+  }
+}
+.commentForm {
+  input[type="text"] {
+    width: calc((100%/2) - 5px);
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+  }
+  input[type="email"] {
+    width: calc((100%/2) - 5px);
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    display: block;
+    border: none;
+    resize: none;
+  }
 }
 // Footer Starts
 footer {

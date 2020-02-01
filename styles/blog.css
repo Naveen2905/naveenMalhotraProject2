@@ -247,6 +247,7 @@ img {
 
 h1,
 h2,
+h3,
 h4,
 p,
 li,
@@ -442,7 +443,7 @@ main {
 
 .recentPost ul li::before {
   content: "\2022";
-  color: #F6A823;
+  color: #f6a823;
   display: inline-block;
   margin-left: 1rem;
   width: 1rem;
@@ -450,6 +451,111 @@ main {
 
 .mainSection {
   width: 70%;
+  margin-left: 5%;
+}
+
+.mainSection .box1,
+.mainSection .box3 {
+  border-bottom: 4px solid #f6a823;
+}
+
+.mainSection div {
+  padding: 10px;
+  background: #f5f5f5;
+  margin-bottom: 5%;
+}
+
+.mainSection div h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mainSection div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-bottom: 10px;
+}
+
+.mainSection div p a {
+  font-weight: bold;
+  color: #285e64;
+}
+
+.mainSection .jeremy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainSection .jeremy li .jeremyBox2 {
+  color: #285e64;
+  font-weight: bold;
+}
+
+.mainSection .jeremy li:nth-of-type(1) {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.mainSection .jeremy li::nth-of-type(2) {
+  width: 80%;
+}
+
+.mainSection .juliaBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainSection .juliaBox li .juliaBox3 {
+  color: #285e64;
+  font-weight: bold;
+}
+
+.mainSection .juliaBox li:nth-of-type(1) {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.mainSection .juliaBox li::nth-of-type(2) {
+  width: 80%;
+}
+
+.commentForm input[type="text"] {
+  width: calc((100%/2) - 5px);
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border: none;
+}
+
+.commentForm input[type="email"] {
+  width: calc((100%/2) - 5px);
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border: none;
+}
+
+.commentForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  display: block;
+  border: none;
+  resize: none;
 }
 
 footer {
