@@ -333,11 +333,25 @@ input {
 .navigation ul li h2 a {
   color: #2c2c2c;
   padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation ul li h2 a:hover {
+  border-top: 3px solid #a82706;
+  border-bottom: 3px solid #a82706;
 }
 
 .navigation ul li a {
   color: #2c2c2c;
   padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation ul li a:hover {
+  border-top: 3px solid #a82706;
+  border-bottom: 3px solid #a82706;
 }
 
 .mobileMenu {
@@ -401,7 +415,7 @@ input {
 }
 
 .headingPhoto ul li:nth-of-type(2) {
-  width: calc(100% / 2);
+  width: 40%;
 }
 
 .headingPhoto ul li:nth-of-type(2) div {
@@ -448,6 +462,12 @@ button {
   font-weight: bold;
   cursor: pointer;
   padding: 1rem 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #a1cace;
 }
 
 .rowOne {
@@ -819,7 +839,7 @@ footer p {
 /* Media Queries (responsive)  */
 @media (max-width: 768px) {
   .navigation {
-    padding-top: 15%;
+    padding-top: 10%;
   }
   label,
   input {
@@ -850,6 +870,9 @@ footer p {
   }
   ul.slidingMenu {
     display: none;
+  }
+  .headingPhoto {
+    margin-top: 10%;
   }
   .headingPhoto ul {
     display: -webkit-box;

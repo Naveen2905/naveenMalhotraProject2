@@ -293,6 +293,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10px;
 }
 
 .navigation ul {
@@ -333,11 +334,25 @@ input {
 .navigation ul li h2 a {
   color: #2c2c2c;
   padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation ul li h2 a:hover {
+  border-top: 3px solid #a82706;
+  border-bottom: 3px solid #a82706;
 }
 
 .navigation ul li a {
   color: #2c2c2c;
   padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation ul li a:hover {
+  border-top: 3px solid #a82706;
+  border-bottom: 3px solid #a82706;
 }
 
 .blogPosition {
@@ -416,8 +431,16 @@ main {
 }
 
 .socialSophie .socialIcons li a {
+  color: #2c2c2c;
+  padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #f6a823;
-  cursor: pointer;
+}
+
+.socialSophie .socialIcons li a:hover {
+  border-top: 3px solid #a82706;
+  border-bottom: 3px solid #a82706;
 }
 
 .socialSophie a {
@@ -453,6 +476,8 @@ main {
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .commentForm input[type="text"]::-webkit-input-placeholder {
@@ -471,6 +496,10 @@ main {
   font-style: italic;
 }
 
+.commentForm input[type="text"]:focus {
+  border: 1.5px solid #a82706;
+}
+
 .commentForm input[type="email"] {
   margin: 10px 0 10px 10px;
   width: calc((100% / 2) - 10px);
@@ -479,6 +508,8 @@ main {
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .commentForm input[type="email"]::-webkit-input-placeholder {
@@ -497,6 +528,10 @@ main {
   font-style: italic;
 }
 
+.commentForm input[type="email"]:focus {
+  border: 1.5px solid #a82706;
+}
+
 .commentForm textarea {
   width: 100%;
   padding: 10px;
@@ -505,6 +540,8 @@ main {
   resize: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .commentForm textarea::-webkit-input-placeholder {
@@ -523,6 +560,10 @@ main {
   font-style: italic;
 }
 
+.commentForm textarea:focus {
+  border: 1.5px solid #a82706;
+}
+
 .commentForm button {
   border: none;
   background: #05afc1;
@@ -537,8 +578,14 @@ main {
   font-weight: bold;
   cursor: pointer;
   padding: 1rem 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 100%;
   margin: 10px 0;
+}
+
+.commentForm button:hover {
+  background: #a1cace;
 }
 
 footer {

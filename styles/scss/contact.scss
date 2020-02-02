@@ -56,6 +56,7 @@ input {
   justify-content: center;
   height: 10vh;
   align-items: center;
+  padding-top: 10px;
   ul {
     width: 60%;
     display: flex;
@@ -135,8 +136,8 @@ main {
       font-size: 2rem;
       line-height: 3.2rem;
       a {
+        @include anchor();
         color: #f6a823;
-        cursor: pointer;
       }
     }
   }
@@ -169,8 +170,12 @@ main {
     border: none;
     font-family: $font2;
     font-size: 1.6rem;
+    transition: all 0.1s ease;
     &::placeholder {
       font-style: italic;
+    }
+    &:focus {
+      border: 1.5px solid #a82706;
     }
   }
   input[type="email"] {
@@ -181,8 +186,12 @@ main {
     border: none;
     font-family: $font2;
     font-size: 1.6rem;
+    transition: all 0.1s ease;
     &::placeholder {
       font-style: italic;
+    }
+    &:focus {
+      border: 1.5px solid #a82706;
     }
   }
   textarea {
@@ -193,8 +202,12 @@ main {
     resize: none;
     font-family: $font2;
     font-size: 1.6rem;
+    transition: all 0.1s ease;
     &::placeholder {
       font-style: italic;
+    }
+    &:focus {
+      border: 1.5px solid #a82706;
     }
   }
   button {

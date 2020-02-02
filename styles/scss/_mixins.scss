@@ -3,6 +3,11 @@
 @mixin anchor() {
   color: #2c2c2c;
   padding: 5px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border-top: 3px solid #a82706;
+    border-bottom: 3px solid #a82706;
+  }
 }
 
 @mixin moreButton() {
@@ -19,4 +24,8 @@
   font-weight: bold;
   cursor: pointer;
   padding: 1rem 1rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: #a1cace;
+  }
 }
