@@ -1,0 +1,215 @@
+@import "./setup";
+@import "./variables";
+@import "./mixins";
+// Setting default font value
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+// stripping default values
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+// Wrapper---------------
+
+.wrapper {
+  max-width: 1140px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+// Header Starts--------------
+
+header {
+  background: #f6a823;
+  height: 70vh;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      font-family: $font2;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin: 0 3%;
+      line-height: 2.9rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+      h2 {
+        font-family: $font1;
+        text-transform: uppercase;
+        font-size: 4.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        a {
+          @include anchor();
+        }
+      }
+      a {
+        @include anchor();
+      }
+    }
+  }
+}
+
+.blogPosition {
+  position: relative;
+}
+
+.headerBackground {
+  background-image: url(../sophie-assets/sophie-assets/blog-image-1.jpg);
+  background-size: cover;
+  height: 60vh;
+  background-position: right;
+  display: flex;
+  align-items: end;
+  p {
+    font-family: $font1;
+    font-size: 7.5rem;
+    line-height: 9.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: -50px;
+  }
+}
+
+// Main Styling Starts
+main {
+  background: #f0efed;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10% 0;
+}
+.socialAside {
+  width: 30%;
+}
+.socialSophie {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background: #f5f5f5;
+  margin-bottom: 10%;
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+    li {
+      margin-right: 10%;
+      font-size: 2rem;
+      line-height: 3.2rem;
+      a {
+        color: #f6a823;
+        cursor: pointer;
+      }
+    }
+  }
+  a {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: #2C2C2C;
+    font-family: $font2;
+    font-weight: bold;
+    margin: 5% 0;
+  }
+  P{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #2C2C2C;
+    font-family: $font2;
+  }
+}
+.mainSection {
+  width: 70%;
+  margin-left: 5%;
+}
+.commentForm {
+  width: 100%;
+  input[type="text"] {
+    margin: 10px 10px 10px 0;
+    width: calc((100% / 2) - 20px);
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    font-family: $font2;
+    font-size: 1.6rem;
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+  input[type="email"] {
+    margin: 10px 0 10px 10px;
+    width: calc((100% / 2) - 10px);
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    font-family: $font2;
+    font-size: 1.6rem;
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: none;
+    resize: none;
+    font-family: $font2;
+    font-size: 1.6rem;
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+  button {
+    @include moreButton();
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+// Footer Starts
+footer {
+  background: #2c2c2c;
+  padding: 8px 0;
+  p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: $font2;
+    color: #f0efed;
+    text-transform: capitalize;
+  }
+}
+// Footer Ends
