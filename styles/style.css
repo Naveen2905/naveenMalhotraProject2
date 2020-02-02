@@ -904,6 +904,49 @@ footer p {
             align-items: center;
     width: 100%;
   }
+  .rowOne {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rowOne .dogImage {
+    width: 100%;
+    position: static;
+  }
+  .rowOne .dogImage img {
+    position: static;
+  }
+  .rowOne .favouriteThings {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .rowTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rowTwo .travelled {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 5%;
+  }
+  .rowTwo .umbrellaImage {
+    width: 100%;
+    position: static;
+  }
+  .rowTwo .umbrellaImage img {
+    position: static;
+  }
   .links .linksList li {
     width: 100%;
   }

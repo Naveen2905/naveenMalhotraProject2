@@ -159,7 +159,6 @@ input {
 }
 button {
   @include moreButton();
-  
 }
 // Section "Who is Sophie" Ends
 
@@ -494,7 +493,39 @@ footer {
   // Header section ends
 
   // Dog umbrella section starts
-  //----------Pending--------------------
+  .rowOne {
+    display: flex;
+    flex-direction: column;
+    .dogImage {
+      width: 100%;
+      position: static;
+      img {
+        position: static;
+      }
+    }
+    .favouriteThings {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+
+  .rowTwo {
+    display: flex;
+    flex-direction: column;
+    .travelled {
+      width: 100%;
+      order: 2;
+      margin-top: 5%;
+    }
+    .umbrellaImage {
+      width: 100%;
+      position: static;
+      img {
+        position: static;
+      }
+    }
+  }
+
   // Dog umbrella section ends
 
   // Links Styling Starts
