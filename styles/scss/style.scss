@@ -45,7 +45,10 @@ header {
   background: #f6a823;
   height: 100vh;
 }
-
+label,
+input {
+  display: none;
+}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -53,6 +56,7 @@ header {
   padding-top: 10px;
   align-items: center;
   ul {
+    height: 10vh;
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -82,10 +86,19 @@ header {
     }
   }
 }
+.mobileMenu {
+  display: none;
+  a {
+    font-size: 2.5rem;
+  }
+}
 
 .headingPhoto {
-  margin-top: 12%;
+  display: flex;
+  align-items: center;
+  height: 90vh;
   ul {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -109,9 +122,13 @@ header {
       }
     }
     li:nth-of-type(2) {
-      width: 30%;
-      img {
-        box-shadow: 10px 10px whitesmoke;
+      width: calc(100% / 2);
+      div {
+        width: 70%;
+        margin-top: 35%;
+        img {
+          box-shadow: 10px 10px whitesmoke;
+        }
       }
     }
   }
@@ -357,8 +374,8 @@ button {
 
 .journeyImage {
   width: 30%;
-  img{
-    box-shadow: 10px 10px #F6A823;
+  img {
+    box-shadow: 10px 10px #f6a823;
   }
 }
 
@@ -373,7 +390,7 @@ button {
     font-weight: bold;
     margin: 2% auto;
   }
-  p{
+  p {
     font-family: $font2;
     font-size: 1.8rem;
     line-height: 3.2rem;
@@ -383,37 +400,136 @@ button {
 
 //Sophie's Journey section Ends
 
-// Three Images gallery section Starts 
-.imagesContainer{
+// Three Images gallery section Starts
+.imagesContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 10% 0;
-  div{
-    width: calc((100%/3) - 20px);
+  div {
+    width: calc((100% / 3) - 20px);
   }
 }
 
-.imageSix{
+.imageSix {
   margin-right: 20px;
 }
 
-.imageSeven{
+.imageSeven {
   margin-right: 20px;
 }
 // Three Images gallery section Ends
 
-// Footer Starts 
-footer{
-  background: #2C2C2C;
+// Footer Starts
+footer {
+  background: #2c2c2c;
   padding: 8px 0;
-  p{
+  p {
     text-align: center;
-    font-size: 1.6rem ;
+    font-size: 1.6rem;
     font-family: $font2;
-    color: #F0EFED;
+    color: #f0efed;
     text-transform: capitalize;
   }
 }
-// Footer Ends 
+// Footer Ends
 
+/* Media Queries (responsive)  */
+
+// For Tablets
+
+@media (max-width: 768px) {
+  //Header section starts
+  .navigation {
+    padding-top: 15%;
+  }
+  label,
+  input {
+    display: block;
+    font-size: 2.5rem;
+  }
+  input[type="checkbox"] {
+    display: none; /*hide the input, we don't need to see it */
+  }
+  input[type="checkbox"]:checked + ul.slidingMenu {
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li {
+      margin: 2% 0;
+    }
+  }
+  ul.slidingMenu {
+    display: none;
+  }
+
+  .headingPhoto {
+    ul {
+      display: flex;
+      flex-direction: column;
+      li:nth-of-type(1) {
+        div {
+          position: relative;
+          img {
+            position: absolute;
+            top: -75px;
+            left: -100px;
+          }
+        }
+      }
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+
+  // Header section ends
+
+  // Dog umbrella section starts
+  //----------Pending--------------------
+  // Dog umbrella section ends
+
+  // Links Styling Starts
+  .links {
+    .linksList {
+      li {
+        width: 100%;
+      }
+    }
+  }
+  // Links Styling Ends
+
+  //Sophie's Journey section starts
+  .journeyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    align-items: center;
+  }
+  .journeyImage {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .journeyInfo {
+    width: 100%;
+  }
+  //Sophie's Journey section ends
+}
+
+// For mobile phones
+
+@media (max-width: 480px) {
+  .imagesContainer {
+    flex-direction: column;
+    div {
+      width: 100%;
+      margin: 2% 0;
+    }
+  }
+}

@@ -46,7 +46,10 @@ header {
   background: #f6a823;
   height: 70vh;
 }
-
+label,
+input {
+  display: none;
+}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -89,7 +92,7 @@ header {
 }
 
 .headerBackground {
-  background-image: url(../sophie-assets/sophie-assets/blog-image-1.jpg);
+  background-image: url(../sophie-assets/sophie-assets/contact-image-1.jpg);
   background-size: cover;
   height: 60vh;
   background-position: right;
@@ -140,15 +143,15 @@ main {
   a {
     font-size: 2rem;
     line-height: 3.2rem;
-    color: #2C2C2C;
+    color: #2c2c2c;
     font-family: $font2;
     font-weight: bold;
     margin: 5% 0;
   }
-  P{
+  p {
     font-size: 1.8rem;
     line-height: 2.8rem;
-    color: #2C2C2C;
+    color: #2c2c2c;
     font-family: $font2;
   }
 }
@@ -213,3 +216,65 @@ footer {
   }
 }
 // Footer Ends
+
+/* Media Queries (responsive)  */
+
+// For Tablets
+
+@media (max-width: 768px) {
+  .navigation {
+    padding-top: 15%;
+  }
+  label,
+  input {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
+    display: none; /*hide the input, we don't need to see it */
+  }
+  input[type="checkbox"]:checked + ul.slidingMenu {
+    margin-top: 30%;
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li {
+      margin: 2% 0;
+    }
+  }
+  ul.slidingMenu {
+    display: none;
+  }
+  .headerBackground {
+    background-position: 50%;
+  }
+  .blogPosition {
+    p {
+      font-size: 5rem;
+    }
+  }
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    .socialAside {
+      width: 100%;
+    }
+    .mainSection {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+// For mobile phones
+
+@media (max-width: 480px) {
+  .blogPosition {
+    p {
+      font-size: 3.5rem;
+    }
+  }
+}

@@ -16,14 +16,17 @@
     <header>
         <div class="wrapper">
             <nav class="navigation">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li>
+                <label for="toggle"><i class="fa fa-bars "></i></label>
+                <input type="checkbox" id="toggle" name="toggle" />
+                <ul class="slidingMenu">
+                    <li class="home"><a href="#">home</a></li>
+                    <li class="about"><a href="#">about</a></li>
+                    <li class="sophie">
                         <h2><a href="#">sophie</a> </h2>
                     </li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="blog"><a href="#">blog</a></li>
+                    <li class="contact"><a href="#">contact</a></li>
+                    <!-- <li class="mobileMenu"><a href="#"><i class="fas fa-bars"></i></a></li> -->
                 </ul>
             </nav>
             <div class="headingPhoto">
@@ -34,9 +37,9 @@
                         <h1>sophie</h1>
                     </li>
 
-
                     <li>
-                        <img src="./sophie-assets/sophie-assets/home-image-1.jpg" alt="happy sophie">
+                        <div>
+                            <img src="./sophie-assets/sophie-assets/home-image-1.jpg" alt="happy sophie"></div>
                     </li>
                 </ul>
             </div>

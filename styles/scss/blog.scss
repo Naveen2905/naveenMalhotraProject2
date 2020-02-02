@@ -46,7 +46,10 @@ header {
   background: #f6a823;
   height: 70vh;
 }
-
+label,
+input {
+  display: none;
+}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -275,7 +278,7 @@ main {
   button {
     @include moreButton();
     width: 100%;
-    margin: 10px 0
+    margin: 10px 0;
   }
 }
 // Footer Starts
@@ -291,3 +294,80 @@ footer {
   }
 }
 // Footer Ends
+
+/* Media Queries (responsive)  */
+
+// For Tablets
+
+@media (max-width: 768px) {
+  .navigation {
+    padding-top: 15%;
+  }
+  label,
+  input {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
+    display: none; /*hide the input, we don't need to see it */
+  }
+  input[type="checkbox"]:checked + ul.slidingMenu {
+    margin-top: 30%;
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li {
+      margin: 2% 0;
+    }
+  }
+  ul.slidingMenu {
+    display: none;
+  }
+  .headerBackground {
+    background-position: 80%;
+  }
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+    .blogAside {
+      width: 100%;
+      .aboutSophie {
+        margin-bottom: 5%;
+      }
+    }
+    .mainSection {
+      width: 100%;
+      margin: 5% 0 0 0;
+    }
+  }
+}
+// For mobile phones
+
+@media (max-width: 480px) {
+  .mainSection {
+    .jeremy {
+      display: flex;
+      flex-direction: column;
+      li {
+        &:nth-of-type(1) {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .juliaBox {
+      display: flex;
+      flex-direction: column;
+      li {
+        width: 100%;
+        &:nth-of-type(1) {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

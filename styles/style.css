@@ -272,6 +272,11 @@ header {
   height: 100vh;
 }
 
+label,
+input {
+  display: none;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +295,7 @@ header {
 }
 
 .navigation ul {
+  height: 10vh;
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,11 +340,26 @@ header {
   padding: 5px;
 }
 
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu a {
+  font-size: 2.5rem;
+}
+
 .headingPhoto {
-  margin-top: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
 }
 
 .headingPhoto ul {
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,10 +401,15 @@ header {
 }
 
 .headingPhoto ul li:nth-of-type(2) {
-  width: 30%;
+  width: calc(100% / 2);
 }
 
-.headingPhoto ul li:nth-of-type(2) img {
+.headingPhoto ul li:nth-of-type(2) div {
+  width: 70%;
+  margin-top: 35%;
+}
+
+.headingPhoto ul li:nth-of-type(2) div img {
   -webkit-box-shadow: 10px 10px whitesmoke;
           box-shadow: 10px 10px whitesmoke;
 }
@@ -727,8 +753,8 @@ button {
 }
 
 .journeyImage img {
-  -webkit-box-shadow: 10px 10px #F6A823;
-          box-shadow: 10px 10px #F6A823;
+  -webkit-box-shadow: 10px 10px #f6a823;
+          box-shadow: 10px 10px #f6a823;
 }
 
 .journeyInfo {
@@ -766,7 +792,7 @@ button {
 }
 
 .imagesContainer div {
-  width: calc((100%/3) - 20px);
+  width: calc((100% / 3) - 20px);
 }
 
 .imageSix {
@@ -778,7 +804,7 @@ button {
 }
 
 footer {
-  background: #2C2C2C;
+  background: #2c2c2c;
   padding: 8px 0;
 }
 
@@ -786,6 +812,109 @@ footer p {
   text-align: center;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  color: #F0EFED;
+  color: #f0efed;
   text-transform: capitalize;
+}
+
+/* Media Queries (responsive)  */
+@media (max-width: 768px) {
+  .navigation {
+    padding-top: 15%;
+  }
+  label,
+  input {
+    display: block;
+    font-size: 2.5rem;
+  }
+  input[type="checkbox"] {
+    display: none;
+    /*hide the input, we don't need to see it */
+  }
+  input[type="checkbox"]:checked + ul.slidingMenu {
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  input[type="checkbox"]:checked + ul.slidingMenu li {
+    margin: 2% 0;
+  }
+  ul.slidingMenu {
+    display: none;
+  }
+  .headingPhoto ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headingPhoto ul li:nth-of-type(1) div {
+    position: relative;
+  }
+  .headingPhoto ul li:nth-of-type(1) div img {
+    position: absolute;
+    top: -75px;
+    left: -100px;
+  }
+  .headingPhoto ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .links .linksList li {
+    width: 100%;
+  }
+  .journeyContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10% 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .journeyImage {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .journeyInfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imagesContainer div {
+    width: 100%;
+    margin: 2% 0;
+  }
 }
