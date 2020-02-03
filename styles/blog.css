@@ -355,6 +355,10 @@ input {
   border-bottom: 3px solid #a82706;
 }
 
+.navigation .whiteBlog a {
+  color: #f0efed;
+}
+
 .blogPosition {
   position: relative;
 }

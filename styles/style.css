@@ -354,6 +354,10 @@ input {
   border-bottom: 3px solid #a82706;
 }
 
+.navigation .home a {
+  color: #F0EFED;
+}
+
 .mobileMenu {
   display: none;
 }
