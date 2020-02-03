@@ -369,7 +369,7 @@ input {
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 
 .headerBackground p {
